@@ -1,0 +1,83 @@
+*{
+    color: white;
+    background-color: black;
+    padding: 0;
+}
+// Might need to mess with margins
+
+nav {
+    padding: 1rem;
+    #nav__dropdown{
+        float: right;
+        content: none;
+    }
+    #nav__dropdown::after {
+        content: none;
+    }
+    select{
+        border: 0.0625rem black;
+    }
+}
+
+
+.rectangle {
+    background-color: white;
+    width: 6rem;
+    height: 0.25rem;
+
+}
+
+.project__card {
+    padding: 0.5rem;
+    .rectangle2{
+        background-color: white;
+        width: 4.1rem;
+        height: 0.058rem;
+        margin-bottom: 0.75rem;
+        
+    }
+    button {
+        padding: 0.25rem;
+        background-color: rgb(32, 29, 29);
+        
+    }
+    .circular{
+        border-radius: 1000px;
+    }
+}
+
+.rectangle3{
+    background-color: white;
+    width: 2.75rem;
+    height: 0.125rem;
+    margin-bottom: 0.75rem;
+    
+}
+
+.about {
+    .img__me{
+        padding-top: 5rem;
+    }
+}
+
+.contact {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    h1{
+        font-size: 5rem;
+    }
+}
+
+#contact__button{
+    width: 12.5rem;
+    height: 5rem;
+}
+
+footer{
+    background-color: rgb(59, 58, 58);
+    height: 5rem;
+}
