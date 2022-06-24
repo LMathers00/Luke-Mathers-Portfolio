@@ -1,49 +1,95 @@
-#more {
+#job1__more {
     position: absolute;
     right: 100vw;
-  }
+}
   
-  .non_visible_text {
+.non_visible_text {
     display: none; 
-  }
-  
-  label[for="more"]:after {
+}
+
+label[for=job1__more]:after {
     content: '+';
     float: right;
     
-  }
+}
   
-  #more:checked~.non_visible_text {
+#job1__more:checked~.non_visible_text {
     display: block;
-  }
+}
   
-  /* TESTING TWO OF THESE ONE ABOVE THE OTHER  */
-
-  #job2__more {
+  
+#job2__more {
     position: absolute;
     right: 100vw;
-  }
+}
   
-  label[for=job2__more]:after {
+label[for=job2__more]:after {
     content: '+';
     float: right;
-  }
+}
   
-  #job2__more:checked~.non_visible_text {
+#job2__more:checked~.non_visible_text {
     display: block;
-  }
+}
   
-  #job3__more {
+#job3__more {
     position: absolute;
     right: 100vw;
-  }
+}
   
-  label[for=job3__more]:after {
+label[for=job3__more]:after {
     content: '+';
     float: right;
-  }
+}
   
-  #job3__more:checked~.non_visible_text {
+#job3__more:checked~.non_visible_text {
     display: block;
-  }
+}
   
+//   now for the interests
+#hobby1__more {
+    position: absolute;
+    right: 100vw;
+}
+  
+.non_visible_text {
+    display: none; 
+}
+  
+label[for=hobby1__more]:after {
+    content: '+';
+    float: right;
+    
+}
+  
+#hobby1__more:checked~.non_visible_text {
+    display: block;
+}
+  
+#hobby2__more {
+    position: absolute;
+    right: 100vw;
+}
+  
+label[for=hobby2__more]:after {
+    content: '+';
+    float: right;
+}
+  
+#hobby2__more:checked~.non_visible_text {
+    display: block;
+}
+  
+#hobby3__more {
+    position: absolute;
+    right: 100vw;
+}
+  
+label[for=hobby3__more]:after {
+    content: '+';
+    float: right;
+}
+  
+#hobby3__more:checked~.non_visible_text {
+    display: block;
+}
