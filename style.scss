@@ -7,16 +7,43 @@
 
 nav {
     padding: 1rem;
-    #nav__dropdown{
-        float: right;
-        content: none;
+    display: flex;
+    align-items: center;
+
+    header{
+        padding-left: 0;
+        padding-right: 50%;
     }
-    #nav__dropdown::after {
-        content: none;
-    }
-    select{
-        border: 0.0625rem black;
-    }
+}
+
+.dropdown { 
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+} 
+   
+.dropbtn { 
+    padding: 0.5rem; 
+    font-size: 1rem; 
+    border-style:none;
+} 
+   
+.dropdown-content { 
+    display: none; 
+    position: absolute; 
+    min-width: 5rem;  
+    background-color: purple;
+// idk why the black overides the purple- not that important 
+}   
+   
+a { 
+    color: white; 
+    padding: 12px 16px;  
+    display: block; 
+} 
+   
+.dropdown:hover .dropdown-content { 
+    display: block; 
 }
 
 
@@ -28,7 +55,8 @@ nav {
 }
 
 .project__card {
-    padding: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     .rectangle2{
         background-color: white;
         width: 4.1rem;
