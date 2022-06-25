@@ -70,7 +70,7 @@ a {
         
     }
     .circular{
-        border-radius: 1000px;
+        border-radius: 50%;
     }
 }
 
@@ -90,14 +90,6 @@ a {
 
 @import "./additional-text";
 
-.non_visible_text, .visible_text {
-    border-style:solid;
-    border-width: 0.0625rem;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-color: rgb(63, 63, 63);
-}
 
 .contact {
     padding: 2rem;
@@ -114,9 +106,33 @@ a {
 #contact__button{
     width: 12.5rem;
     height: 5rem;
+    border: 1px solid;
+    &:active {
+        background-color: rgb(46, 1, 46);
+    }
 }
 
 footer{
-    background-color: rgb(59, 58, 58);
+    background-color: rgb(58, 58, 58);
     height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        padding: 0.25rem;
+        background-color: rgb(58, 58, 58);
+        .button{
+            height: 5rem;
+            width: 5rem;
+        }
+    }
+    .circular{
+        border-radius: 1000px;
+    }
+    img{
+        height: 2rem;
+        width: 2rem;
+        font-size: 2rem;
+        border-radius: 50%;
+    }
 }

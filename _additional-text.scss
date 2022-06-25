@@ -93,3 +93,12 @@ label[for=hobby3__more]:after {
 #hobby3__more:checked~.non_visible_text {
     display: block;
 }
+
+.non_visible_text, .visible_text {
+    border-style:solid;
+    border-width: 0.0625rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: rgb(63, 63, 63);
+}
