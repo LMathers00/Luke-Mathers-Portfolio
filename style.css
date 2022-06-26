@@ -66,6 +66,9 @@ a {
 .project__card .circular {
   border-radius: 50%;
 }
+.project__card i {
+  background-color: rgb(32, 29, 29);
+}
 
 .rectangle3 {
   background-color: white;
