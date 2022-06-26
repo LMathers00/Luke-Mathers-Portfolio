@@ -250,5 +250,11 @@ footer{
     }
 }
 
-@media screen and (min-width: 1024px) {    
+@media screen and (min-width: 1024px) { 
+    .project__card {
+        width: 25%;
+        height: 20rem;
+        float: left;
+        padding: 2rem;
+    }
 }

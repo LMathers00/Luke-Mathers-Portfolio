@@ -326,4 +326,12 @@ footer img {
     width: 45%;
     padding-left: 2rem;
   }
+}
+@media screen and (min-width: 1024px) {
+  .project__card {
+    width: 25%;
+    height: 20rem;
+    float: left;
+    padding: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
