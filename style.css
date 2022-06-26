@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Inter:wght@400;500;600&display=swap");
 * {
   color: white;
-  background-color: black;
+  background-color: rgb(30, 30, 30);
   padding: 0;
 }
 
@@ -11,7 +12,10 @@ nav {
 }
 nav header {
   padding-left: 0;
-  padding-right: 50%;
+  padding-right: 25%;
+  font-family: cormorant;
+  font-weight: bold;
+  font-size: 1.813rem;
 }
 
 .dropdown {
@@ -43,10 +47,34 @@ a {
   display: block;
 }
 
+h1 {
+  font-family: cormorant;
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
 .rectangle {
   background-color: white;
   width: 6rem;
   height: 0.25rem;
+}
+
+p {
+  font-family: inter;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h2 {
+  font-family: cormorant;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: cormorant;
+  font-weight: 400;
+  font-size: 1.844rem;
 }
 
 .project__card {
@@ -61,13 +89,18 @@ a {
 }
 .project__card button {
   padding: 0.25rem;
-  background-color: rgb(32, 29, 29);
+  background-color: rgb(40, 40, 40);
+  border: solid 1px rgb(30, 30, 30);
+  font-family: inter;
+  font-weight: 600;
+  font-size: 0.66rem;
 }
 .project__card .circular {
+  padding: 0.5rem;
   border-radius: 50%;
 }
 .project__card i {
-  background-color: rgb(32, 29, 29);
+  background-color: rgb(40, 40, 40);
 }
 
 .rectangle3 {
@@ -79,6 +112,23 @@ a {
 
 .about .img__me {
   padding-top: 5rem;
+}
+.about h4 {
+  font-family: cormorant;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h4 {
+  font-family: cormorant;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-family: cormorant;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 #job1__more {
@@ -198,13 +248,15 @@ label[for=hobby3__more]:after {
   width: 12.5rem;
   height: 5rem;
   border: 1px solid;
+  font-family: inter;
+  font-weight: 500;
+  font-size: 1.125rem;
 }
 #contact__button:active {
-  background-color: rgb(46, 1, 46);
+  background-color: rgba(128, 0, 128, 0.548);
 }
 
 footer {
-  background-color: rgb(58, 58, 58);
   height: 5rem;
   display: flex;
   justify-content: center;
@@ -212,14 +264,15 @@ footer {
 }
 footer span {
   padding: 0.25rem;
-  background-color: rgb(58, 58, 58);
 }
 footer span .button {
   height: 5rem;
   width: 5rem;
 }
 footer .circular {
-  border-radius: 1000px;
+  border: solid 1px;
+  border-radius: 50%;
+  border-color: rgb(30, 30, 30);
 }
 footer img {
   height: 2rem;

@@ -1,9 +1,17 @@
+$background-color: rgb(30, 30, 30);  
+$button-color: rgb(40, 40, 40);
+$display-color: white;
+$font-cor: cormorant;
+$font-int: inter;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+
 *{
-    color: white;
-    background-color: black;
+    color: $display-color;
+    background-color: $background-color;
     padding: 0;
 }
-// Might need to mess with margins
 
 nav {
     padding: 1rem;
@@ -12,7 +20,10 @@ nav {
 
     header{
         padding-left: 0;
-        padding-right: 50%;
+        padding-right: 25%;
+        font-family: $font-cor;
+        font-weight: bold;
+        font-size: 1.813rem;
     }
 }
 
@@ -37,7 +48,7 @@ nav {
 }   
    
 a { 
-    color: white; 
+    color: $display-color; 
     padding: 12px 16px;  
     display: block; 
 } 
@@ -46,19 +57,42 @@ a {
     display: block; 
 }
 
+h1 {
+    font-family: $font-cor;
+    font-size: 4.5rem;
+    font-weight: 400;
+}
 
 .rectangle {
-    background-color: white;
+    background-color: $display-color;
     width: 6rem;
     height: 0.25rem;
 
+}
+
+p{
+    font-family: $font-int;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+h2 {
+    font-family: $font-cor;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h3{
+    font-family: $font-cor;
+    font-weight: 400;
+    font-size: 1.844rem;
 }
 
 .project__card {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     .rectangle2{
-        background-color: white;
+        background-color: $display-color;
         width: 4.1rem;
         height: 0.058rem;
         margin-bottom: 0.75rem;
@@ -66,19 +100,23 @@ a {
     }
     button {
         padding: 0.25rem;
-        background-color: rgb(32, 29, 29);
-        
+        background-color: $button-color;
+        border: solid 1px $background-color;
+        font-family: $font-int;
+        font-weight: 600;
+        font-size: 0.66rem;
     }
     .circular{
+        padding: 0.5rem;
         border-radius: 50%;
     }
     i {
-        background-color: rgb(32, 29, 29);
+        background-color: $button-color;
     }
 }
 
 .rectangle3{
-    background-color: white;
+    background-color: $display-color;
     width: 2.75rem;
     height: 0.125rem;
     margin-bottom: 0.75rem;
@@ -89,6 +127,23 @@ a {
     .img__me{
         padding-top: 5rem;
     }
+    h4 {
+        font-family: $font-cor;
+        font-weight: 700;
+        font-size: 2rem
+    }
+}
+
+h4 {
+    font-family: $font-cor;
+    font-weight: 700;
+    font-size: 1.5rem
+}
+
+h5{
+    font-family: $font-cor;
+    font-weight: 600;
+    font-size: 1.20rem;
 }
 
 @import "./additional-text";
@@ -110,27 +165,30 @@ a {
     width: 12.5rem;
     height: 5rem;
     border: 1px solid;
+    font-family: $font-int;
+    font-weight: 500;
+    font-size: 1.125rem;
     &:active {
-        background-color: rgb(46, 1, 46);
+        background-color: rgba(128, 0, 128, 0.548);
     }
 }
 
 footer{
-    background-color: rgb(58, 58, 58);
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     span {
         padding: 0.25rem;
-        background-color: rgb(58, 58, 58);
         .button{
             height: 5rem;
             width: 5rem;
         }
     }
     .circular{
-        border-radius: 1000px;
+        border: solid 1px;
+        border-radius: 50%;
+        border-color: $background-color;
     }
     img{
         height: 2rem;
