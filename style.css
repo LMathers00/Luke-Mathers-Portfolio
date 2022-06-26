@@ -17,6 +17,9 @@ nav header {
   font-weight: bold;
   font-size: 1.813rem;
 }
+nav span {
+  color: rgb(155, 113, 8);
+}
 
 .dropdown {
   display: flex;
@@ -117,6 +120,13 @@ h3 {
   font-family: cormorant;
   font-weight: 700;
   font-size: 2rem;
+}
+.about p {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-left: 0;
+  font-size: 1.25rem;
 }
 
 h4 {
@@ -279,4 +289,41 @@ footer img {
   width: 2rem;
   font-size: 2rem;
   border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .project__card {
+    width: 42%;
+    height: 20rem;
+    float: left;
+    padding: 1.6rem;
+  }
+
+  .about {
+    padding-left: 2rem;
+  }
+  .about p {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    padding-left: 0;
+    font-size: 1.25rem;
+  }
+  .about .img__me {
+    padding-top: 0;
+    padding-right: 2rem;
+  }
+
+  .experience {
+    display: inline-block;
+    width: 45%;
+    padding-left: 2rem;
+  }
+
+  .interests {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    padding-left: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
