@@ -1,0 +1,18 @@
+.about {
+    .img__me{
+        padding-top: 5rem;
+    }
+    h4 {
+        font-family: $font-cor;
+        font-weight: 700;
+        font-size: 2rem
+    }
+    p {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        padding-left: 0;
+        font-size: 1.25rem;
+
+    }
+}

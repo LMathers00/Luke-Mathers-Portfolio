@@ -1,0 +1,26 @@
+.project__card {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    .rectangle2{
+        background-color: $display-color;
+        width: 4.1rem;
+        height: 0.058rem;
+        margin-bottom: 0.75rem;
+        
+    }
+    button {
+        padding: 0.25rem;
+        background-color: $button-color;
+        border: solid 1px $background-color;
+        font-family: $font-int;
+        font-weight: 600;
+        font-size: 0.66rem;
+    }
+    .circular{
+        padding: 0.5rem;
+        border-radius: 50%;
+    }
+    i {
+        background-color: $button-color;
+    }
+}

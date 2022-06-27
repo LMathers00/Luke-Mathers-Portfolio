@@ -1,0 +1,48 @@
+.contact {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    h1{
+        font-size: 5rem;
+    }
+}
+
+#contact__button{
+    width: 12.5rem;
+    height: 5rem;
+    border: 1px solid;
+    font-family: $font-int;
+    font-weight: 500;
+    font-size: 1.125rem;
+    &:active {
+        background-color: $alternative-color;
+    }
+}
+
+footer{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        padding: 0.25rem;
+        .button{
+            height: 5rem;
+            width: 5rem;
+        }
+    }
+    .circular{
+        border: solid 1px;
+        border-radius: 50%;
+        border-color: $background-color;
+    }
+    img{
+        height: 2rem;
+        width: 2rem;
+        font-size: 2rem;
+        border-radius: 50%;
+    }
+}
