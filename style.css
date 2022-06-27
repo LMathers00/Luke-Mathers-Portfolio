@@ -13,12 +13,16 @@ nav {
 nav header {
   padding-left: 0;
   padding-right: 25%;
-  font-family: cormorant;
+  font-family: cormorant, helvetica, sans-serif;
   font-weight: bold;
   font-size: 1.813rem;
 }
 nav span {
   color: rgb(155, 113, 8);
+}
+
+.topnav {
+  display: none;
 }
 
 .dropdown {
@@ -51,7 +55,7 @@ a {
 }
 
 h1 {
-  font-family: cormorant;
+  font-family: cormorant, helvetica, sans-serif;
   font-size: 4.5rem;
   font-weight: 400;
 }
@@ -63,19 +67,19 @@ h1 {
 }
 
 p {
-  font-family: inter;
+  font-family: inter, arial, sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
 
 h2 {
-  font-family: cormorant;
+  font-family: cormorant, helvetica, sans-serif;
   font-weight: 700;
   font-size: 2rem;
 }
 
 h3 {
-  font-family: cormorant;
+  font-family: cormorant, helvetica, sans-serif;
   font-weight: 400;
   font-size: 1.844rem;
 }
@@ -94,7 +98,7 @@ h3 {
   padding: 0.25rem;
   background-color: rgb(40, 40, 40);
   border: solid 1px rgb(30, 30, 30);
-  font-family: inter;
+  font-family: inter, arial, sans-serif;
   font-weight: 600;
   font-size: 0.66rem;
 }
@@ -117,7 +121,7 @@ h3 {
   padding-top: 5rem;
 }
 .about h4 {
-  font-family: cormorant;
+  font-family: cormorant, helvetica, sans-serif;
   font-weight: 700;
   font-size: 2rem;
 }
@@ -130,13 +134,13 @@ h3 {
 }
 
 h4 {
-  font-family: cormorant;
+  font-family: cormorant, helvetica, sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
 }
 
 h5 {
-  font-family: cormorant;
+  font-family: cormorant, helvetica, sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -258,7 +262,7 @@ label[for=hobby3__more]:after {
   width: 12.5rem;
   height: 5rem;
   border: 1px solid;
-  font-family: inter;
+  font-family: inter, arial, sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
 }
@@ -293,7 +297,31 @@ footer img {
 
 @media screen and (min-width: 768px) {
   nav header {
-    padding-right: 70%;
+    padding-right: 30%;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .topnav {
+    display: flex;
+    overflow: hidden;
+    background-color: #333;
+    font-style: cormorant, helvetica, sans-serif;
+  }
+
+  .topnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 1.5rem;
+  }
+
+  .topnav a:hover {
+    background-color: purple;
+    color: white;
   }
 
   .project__card {
@@ -333,7 +361,7 @@ footer img {
 }
 @media screen and (min-width: 1024px) {
   nav header {
-    padding-right: 75%;
+    padding-right: 50%;
   }
 
   .project__card {
@@ -346,6 +374,14 @@ footer img {
 @media screen and (min-width: 1350px) {
   .project__card {
     width: 28%;
+    height: 20rem;
+    float: left;
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .project__card {
+    width: 30%;
     height: 20rem;
     float: left;
     padding: 2rem;
