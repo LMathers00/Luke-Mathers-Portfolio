@@ -54,33 +54,36 @@ a {
   display: block;
 }
 
+h1, p, h3 {
+  font-weight: 400;
+}
+
+h2, h4 {
+  font-weight: 700;
+}
+
 h1 {
   font-family: cormorant, helvetica, sans-serif;
   font-size: 4.5rem;
-  font-weight: 400;
 }
 
 p {
   font-family: inter, arial, sans-serif;
-  font-weight: 400;
   font-size: 1rem;
 }
 
 h2 {
   font-family: cormorant, helvetica, sans-serif;
-  font-weight: 700;
   font-size: 2rem;
 }
 
 h3 {
   font-family: cormorant, helvetica, sans-serif;
-  font-weight: 400;
   font-size: 1.844rem;
 }
 
 h4 {
   font-family: cormorant, helvetica, sans-serif;
-  font-weight: 700;
   font-size: 1.5rem;
 }
 
@@ -113,7 +116,7 @@ h5 {
   height: 0.058rem;
   margin-bottom: 0.75rem;
 }
-.project__card button {
+.project__card .button__REACT, .project__card .button__SCSS {
   padding: 0.25rem;
   background-color: rgb(40, 40, 40);
   border: solid 1px rgb(30, 30, 30);
@@ -139,6 +142,7 @@ h5 {
 }
 .about p {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   padding: 2rem;
   padding-left: 0;
@@ -299,18 +303,15 @@ footer img {
   nav header {
     padding-right: 30%;
   }
-
   .dropdown {
     display: none;
   }
-
   .topnav {
     display: flex;
     overflow: hidden;
     background-color: #333;
     font-style: cormorant, helvetica, sans-serif;
   }
-
   .topnav a {
     float: right;
     color: white;
@@ -318,19 +319,16 @@ footer img {
     padding: 14px 16px;
     font-size: 1.5rem;
   }
-
   .topnav a:hover {
     background-color: purple;
     color: white;
   }
-
   .project__card {
     width: 42%;
     height: 20rem;
     float: left;
     padding: 1.6rem;
   }
-
   .about {
     padding-left: 2rem;
   }
@@ -345,13 +343,11 @@ footer img {
     padding-top: 0;
     padding-right: 2rem;
   }
-
   .experience {
     display: inline-block;
     width: 45%;
     padding-left: 2rem;
   }
-
   .interests {
     display: inline-block;
     vertical-align: top;
@@ -363,7 +359,6 @@ footer img {
   nav header {
     padding-right: 50%;
   }
-
   .project__card {
     width: 26%;
     height: 20rem;
