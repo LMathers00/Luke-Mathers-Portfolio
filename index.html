@@ -18,9 +18,9 @@
     <span class="dropdown">
         <button class="dropbtn">≡</button>
         <div class="dropdown-content">
-            <a href="#">About </a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a href="#about">About </a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </div>
     </span>
 </nav>
@@ -30,7 +30,7 @@
 
 
 <p>Hi, I'm Luke a Junior software developer based in London</p> 
-<h2>
+<h2 id="portfolio">
     Portfolio &#8628;
 </h2>
 
@@ -74,7 +74,7 @@
         <button class="button__SCSS">SCSS</button>
     </div>
 
-    <div class="project__card">
+    <!-- <div class="project__card">
         <img src="http://placekitten.com/304/186" alt="placeholder image of cat">
         <h3>PROJECT 4
             <span class="circular__buttons">
@@ -111,18 +111,17 @@
         <div class="rectangle2"></div>
         <button class="button__REACT">REACT</button>
         <button class="button__SCSS">SCSS</button>
-    </div>
+    </div> -->
 </div>
 
 <br>
 <br>
 
-<div class="about">
-    <a href="#about__link"></a>
+<div class="about" id="about">
     <h4>ABOUT</h4>
     <div class="rectangle3"></div>
     <div class="about2">
-    <p><img class="img__me" src="http://placekitten.com/304/401" alt="Placeholder">
+    <p><img class="img__me" src="./mePhoto.jpg" alt="Personal photo" width="450px" height="600px">
         Hi my name is Luke Mathers and I am an aspiring software developer. I am from London and my love of computing started from an early age from playing video games with my late father. I have always been a curious person who is very observant so naturally i wanted to know how the world works and so i pushed my interests by taking all three sciences and Math at A level. <br>
     <br>Following this my love for both space and computing grew. I went on to study Astrophysics at the University of Sussex where i was introduced to coding on a higher level by using python to help solve complicated differential equations and aswell as monte carlo simulations
         At this point i realised my passion and my comfort of gaming were in very similar areas so naturally it was the next step for my career progression. <br><br> I think my goal one day is to be part of a major video game franchise in an attempt to help other people bond.</p>
@@ -140,7 +139,32 @@
                 <label class="job1__more" for="job1__more"></label>
             </h5>
             <input type="checkbox" id="job1__more" />
-            <p class="non_visible_text">Learning a wide range of technical skills such as HTML, CSS and BEM. With more to come such as React and JavaScript</p>
+            <p class="non_visible_text">As part of the course I completed a range of projects including... <br><br>
+                
+                <b>Final Client Project Delivery</b><br>
+                A real-life MVP for a development project, delivered
+                as a Scrum team to a client who will use it for future
+                development. It will include a React front-end and Spring back-end integration, including authentication and CI deployment to GCP.
+                <br><br>
+                <b>Spring Boot Project</b><br>
+                A properly architected and documented API following all modern design patterns, built using Spring and deployed using GCP.
+                <br><br>
+                <b>Java Project</b><br>
+                A Java Object Oriented application making use of multiple models and classes to run complex game logic from the command line.
+                <br><br>
+                <b>React API Project </b><br>
+                A React application that pulls data from an external public API and presents it in a dashboard or multipage layout.
+                <br><br>
+                <b>JavaScript Game Project </b><br>
+                A browser-based game using modern JavaScript
+                programming techniques and DOM manipulation.
+                <br><br>
+                <b>HTML/ CSS Portfolio Website</b><br>
+                Built using correct version control and modern coding
+                standards, and deployed live using a CI pipeline.
+                
+                
+                Learning a wide range of technical skills such as HTML, CSS and BEM. With more to come such as React and JavaScript</p>
         </div>
 
         <div>
@@ -199,10 +223,13 @@
 </div>
 
 
-<div class="contact">
+<div class="contact" id="contact">
     <h1>Get in Touch.</h1>
-    <button id="contact__button">CONTACT</button>
+    <button id="contact__button"><a href="mailto:lukemathers@hotmail.co.uk">CONTACT</a>  </button>
+
 </div>
+
+
 
 
 </body>
@@ -210,9 +237,9 @@
 
 <footer>
     <span class="circular__buttons">
-        <button class="circular"> <img src="./github-logo.webp" alt="Github logo" onclick="window.location.href='https://github.com/LMathers00'"></button>
-        <button class="circular"> <img src="./linkedin.png" alt="Linkedin logo" onclick="window.location.href='https://www.linkedin.com/in/luke-mathers-91a712207/';"> </button>
-        <button class="circular"> <img src="./CV-image.png" alt="CV"> </button>
+        <button class="circular"> <img src="./github-logo.webp" alt="Github logo" onclick="window.location.href='https://github.com/LMathers00' " target="_blank"></button>
+        <button class="circular"> <img src="./linkedin.png" alt="Linkedin logo" onclick="window.location.href='https://www.linkedin.com/in/luke-mathers-91a712207/';"target="_blank" > </button>
+        <button class="circular"> <img src="./CV-image.png" alt="CV" onclick="window.location.href='https://1drv.ms/p/s!AvbA814ihl5xhc9-ESixNqfpz3EPkw?e=EdwZlF'"target="_blank"> </button>
     </span>
 </footer>
 </html>
